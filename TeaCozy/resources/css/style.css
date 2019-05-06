@@ -40,6 +40,8 @@ header {
 
 /* Banner */
 .banner {
+  display: block;
+  position: relative;
   height: 700px;
   width: 1200px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
@@ -54,18 +56,25 @@ header {
 
 /* Teas of the Month */
 .teas-container {
-  height: 200px;
+  height: auto;
   width: 1000px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-
 }
 
 .image-content {
   display: flex;
-  flex-direction: row;
+  
   flex-wrap: wrap;
 }
+
+.image-content img {
+  height: 200px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
 /* Locations */
 .locations {
   height: 500px;
